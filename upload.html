@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Add Your Photos — Farah &amp; Mahmoud</title>
+
+<!--
+  ============================================================
+  HOW THIS WORKS (read me before publishing)
+  ============================================================
+  Guests scan the QR code on the main site and land here. Tapping
+  the button below sends them to a Google Drive "File Request" —
+  this lets ANYONE upload photos/videos straight into your Drive
+  folder WITHOUT needing a Google account or signing in. Farah can
+  then open that same Drive folder any time to view and download
+  everything guests sent.
+
+  SET IT UP (5 minutes, do this once):
+  1. Go to drive.google.com and create a new folder, e.g.
+     "Farah & Mahmoud - Guest Photos".
+  2. Right-click the folder → "File request" (on desktop) —
+     if you don't see this option, click the folder, then the
+     "+" or "..." menu → "File request".
+  3. Give the request a title (e.g. "Guest Photos") and click Create.
+  4. Copy the link it gives you — it looks like:
+     https://drive.google.com/drive/folders/XXXXXXXX?ths=true
+  5. Paste that link below, replacing YOUR_GOOGLE_DRIVE_FILE_REQUEST_LINK.
+  6. To view/download what guests send, just open the folder in
+     Drive normally — uploaded files appear there automatically.
+
+  Note: Google File Requests currently accept files up to 10GB each
+  and don't require the uploader to have an account, but the folder
+  owner (you) does need a Google account to create the request.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Tangerine:wght@400;700&family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy-deep:#071018; --navy:#0b1b2c; --water:#0a2135;
+    --pearl:#f4efe1; --champagne:#e9dcc0; --gold:#c9a86a; --gold-soft:#e0c890;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(180deg, #050c14 0%, #0a2135 45%, #12314e 100%);
+    color:var(--pearl); font-family:'Cormorant Garamond', serif; text-align:center;
+    padding:8vw 6vw;
+  }
+  .card{
+    max-width:480px; background:rgba(6,14,22,.5); backdrop-filter:blur(10px);
+    border:1px solid rgba(224,200,144,.2); border-radius:18px; padding:3rem 2.2rem;
+  }
+  h1{
+    font-family:'Playfair Display', serif; font-weight:500; font-size:1.8rem;
+    color:var(--pearl); margin:.4rem 0 1rem;
+  }
+  .eyebrow{
+    font-family:'Cormorant SC','Cormorant Garamond', serif; letter-spacing:.4em;
+    text-transform:uppercase; font-size:.72rem; color:var(--gold-soft);
+  }
+  p{ font-size:1.15rem; line-height:1.6; color:#dfe6ee; }
+  .btn{
+    display:inline-block; margin-top:1.8rem; border:1px solid var(--gold-soft);
+    background:transparent; color:var(--champagne); padding:.9em 2.4em;
+    font-family:'Cormorant SC','Cormorant Garamond',serif; letter-spacing:.24em;
+    text-transform:uppercase; font-size:.8rem; border-radius:999px; text-decoration:none;
+    transition:background .3s ease, color .3s ease;
+  }
+  .btn:hover{ background:var(--gold-soft); color:#12283f; }
+  .foot{ margin-top:2rem; font-size:.85rem; color:#93a3b3; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="eyebrow">Farah &amp; Mahmoud</span>
+    <h1>Share Your Photos</h1>
+    <p>Thank you for celebrating with us! Tap below to upload the photos and videos you took tonight — we'd love to see the evening through your eyes.</p>
+    <a class="btn" id="uploadBtn" href="YOUR_GOOGLE_DRIVE_FILE_REQUEST_LINK" target="_blank" rel="noopener">Upload Photos</a>
+    <p class="foot">Opens Google Drive — no account needed to upload.</p>
+  </div>
+</body>
+</html>
